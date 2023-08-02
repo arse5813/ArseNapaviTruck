@@ -5,3 +5,4 @@ export * from "./chat_message.js";
 export * from "./group.js";
 export * from "./group_message.js";
 export * from "./calc.js";
+export * from "./servicios.ruta.js"
