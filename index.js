@@ -4,9 +4,9 @@ import { IP_SERVER, PORT, DB_USER, DB_PASSWORD, DB_HOST } from "./constants.js";
 import { io } from "./utils/index.js";
 
 
-//const mongoDbUrl = `mongodb+srv://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/dbArse`
+const mongoDbUrl = `mongodb+srv://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/dbArse`
 
-const mongoDbUrl = "mongodb://127.0.0.1:27017/dbArse";
+//const mongoDbUrl = "mongodb://127.0.0.1:27017/dbArse";
 console.log(mongoDbUrl);
 mongooseDb.connect(mongoDbUrl, { useNewUrlParser: true, useUnifiedTopology: true })
      .then((result) => { // Successfully connected
