@@ -16,6 +16,7 @@ mongooseDb.connect(mongoDbUrl, { useNewUrlParser: true, useUnifiedTopology: true
         console.log("##### API REST######")
         console.log("####################")
         console.log(`http://${IP_SERVER}:${PORT}/api`)
+        console.log(mongoDbUrl);
 
         io.sockets.on("connection", (socket) =>{
            console.log("NUEVO USUARIO CONECTADO"); 
