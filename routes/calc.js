@@ -9,8 +9,8 @@ const api = express.Router();
 // api.post("/calc/data", [mdAuth.asureAuth], ChatMessageController.sendText)
 // api.get("/calc/data/:calc_id", [mdAuth.asureAuth], ChatMessageController.getAll);
 
-api.post("/calc/data", [mdAuth.asureAuth], CalController.registerCalc)
-api.get("/calc/:id", [mdAuth.asureAuth], CalController.getCalc);
+api.post("/calc/data", CalController.registerCalc)
+api.get("/calc/:id", CalController.getCalc);
 api.get("/calc/data/:propietario", [mdAuth.asureAuth] ,CalController.getPropietario);
 
 
